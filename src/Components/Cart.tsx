@@ -4,7 +4,7 @@ import { IState } from '../Store';
 import { ICartItem } from '../Store/Modules/Cart/Types';
 
 const Cart: React.FC = () => {
-  const cart = useSelector<IState, ICartItem[]>(state => state.cart.items)
+  const cart = useSelector<IState, ICartItem[]>(state => state.cart.items);
 
   console.log(cart);
 
