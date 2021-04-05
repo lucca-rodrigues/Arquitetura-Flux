@@ -6,6 +6,8 @@ const INITIAL_STATE: ICartState = {
 };
 
 const Cart: Reducer<ICartState> = (state = INITIAL_STATE, action) => {
+  // Action e State é um parâmetro do Redux que utilizamos como props
+  // para executar algumas ações
   switch(action.type){
     case 'ADD_PRODUCT_TO_CART' : {
       console.log(action.payload); // Payload = dado enviado pro reducer

@@ -1,4 +1,4 @@
-import { IProduct } from "./Types";
+import { IProduct } from './Types';
 
 export function addProductToCart(product: IProduct) {
   return {
