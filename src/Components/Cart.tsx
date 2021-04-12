@@ -21,9 +21,10 @@ const Cart: React.FC = () => {
       <tbody>
         {cart.map(item => (
           <tr key={item.product.id}>
-            <tr>{item.product.price}</tr>
-            <tr>{item.quantity}</tr>
-            <tr>{(item.product.price * item.quantity).toFixed(2)}</tr>
+            <th>{item.product.title}</th>
+            <th>{item.product.price}</th>
+            <th>{item.quantity}</th>
+            <th>{(item.product.price * item.quantity).toFixed(2)}</th>
           </tr>
         ))}
       </tbody>
